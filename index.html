@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>O'Kelly's Electrical & Plumbing | Johannesburg | 24/7 Emergency</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box;font-family:Arial,sans-serif}
+body{background:#f4f4f4;color:#222}
+.top{background:#0b2a4a;color:#fff;padding:10px;text-align:center;font-size:14px}
+header{background:#fff;padding:20px;text-align:center;box-shadow:0 2px 10px rgba(0,0,0,.1)}
+header h1{font-size:32px;color:#0b2a4a}
+header h1 span{color:#f9a825}
+header p{margin-top:5px;color:#555}
+.hero{background:#0b2a4a;color:#fff;padding:50px 20px;text-align:center}
+.hero h2{font-size:36px;line-height:1.2}
+.hero h2 span{color:#f9a825}
+.hero p{margin:15px 0 25px;font-size:18px;opacity:.9}
+.btn{display:inline-block;background:#25D366;color:#fff;padding:16px 28px;border-radius:50px;text-decoration:none;font-weight:bold;font-size:18px}
+.btn2{display:inline-block;background:#f9a825;color:#000;padding:16px 28px;border-radius:50px;text-decoration:none;font-weight:bold;font-size:18px;margin-left:10px}
+.section{padding:40px 20px;max-width:900px;margin:auto}
+.section h3{text-align:center;font-size:26px;margin-bottom:20px;color:#0b2a4a}
+.grid{display:grid;grid-template-columns:1fr 1fr;gap:15px}
+.card{background:#fff;padding:20px;border-radius:12px;box-shadow:0 2px 8px rgba(0,0,0,.08)}
+.card h4{margin-bottom:8px}
+.card p{color:#555;font-size:15px;line-height:1.5}
+.trust{background:#fff;padding:30px 20px;text-align:center}
+.trust b{font-size:28px;color:#f9a825}
+.reviews{background:#0b2a4a;color:#fff;padding:30px 20px;text-align:center;border-radius:12px}
+form{background:#fff;padding:25px;border-radius:12px;box-shadow:0 2px 8px rgba(0,0,0,.08)}
+input,select,textarea{width:100%;padding:13px;margin:8px 0;border:1px solid #ddd;border-radius:8px;font-size:16px}
+button{width:100%;background:#25D366;color:#fff;border:0;padding:16px;border-radius:50px;font-weight:bold;font-size:18px;cursor:pointer}
+footer{background:#0b2a4a;color:#fff;text-align:center;padding:20px;font-size:14px}
+@media(max-width:600px){.grid{grid-template-columns:1fr}.hero h2{font-size:28px}.btn2{margin-left:0;margin-top:10px}}
+</style>
+</head>
+<body>
+<div class="top">⭐ 5.0 Rated on Google | 📞 072 315 1510 | Serving Johannesburg</div>
+<header><h1>O'KELLY'S <span>Electrical & Plumbing</span></h1><p>Trusted • Reliable • 24/7 Emergency Call-Outs</p></header>
+<div class="hero">
+<h2>Electrician & Plumber in Johannesburg<br><span>We Fix It Today.</span></h2>
+<p>No call-out fee wasted. Fast response. Clean work. Guaranteed.</p>
+<a class="btn" href="https://wa.me/27723151510?text=Hi%20O'Kelly's,%20I%20need%20an%20electrician/plumber%20urgently">💬 WhatsApp Us Now</a>
+<a class="btn2" href="tel:+27723151510">📞 Call 072 315 1510</a>
+</div>
+<div class="section"><h3>What We Do</h3>
+<div class="grid">
+<div class="card"><h4>⚡ Electrical</h4><p>Fault finding, DB boards, plugs, lights, geysers, rewiring, CoC, generators, inverters.</p></div>
+<div class="card"><h4>🔧 Plumbing</h4><p>Leaks, burst pipes, blocked drains, geysers, toilets, taps, installations & renovations.</p></div>
+<div class="card"><h4>🚨 24/7 Emergency</h4><p>Power outage? Burst pipe at 2am? We answer and come out fast in Johannesburg.</p></div>
+<div class="card"><h4>🏠 Homes & Businesses</h4><p>From small fixes to full maintenance for houses, offices, shops & complexes.</p></div>
+</div></div>
+<div class="section"><div class="reviews"><h3 style="color:#fff">⭐⭐⭐⭐⭐ 5.0 Stars on Google</h3><p style="margin-top:10px">"Excellent service, arrived quickly and fixed everything. Highly recommended!"</p><p style="margin-top:15px;font-size:14px;opacity:.8">- Happy Customers in Johannesburg</p></div></div>
+<div class="section"><h3>Request a Free Quote</h3>
+<form onsubmit="sendWhatsApp();return false;">
+<input id="name" placeholder="Your Name" required>
+<input id="phone" placeholder="Your Phone Number" required>
+<select id="service"><option>Electrical</option><option>Plumbing</option><option>Emergency - Need Someone NOW</option><option>Other</option></select>
+<textarea id="msg" placeholder="What needs fixing? e.g. Geyser not working, power tripping..." rows="3"></textarea>
+<button type="submit">Send Quote Request on WhatsApp →</button>
+</form></div>
+<div class="trust"><b>072 315 1510</b><br><br>Johannesburg & Surrounding Areas<br>Mon - Sun | 24/7 Emergency</div>
+<footer>© 2026 O'Kelly's Electrical & Plumbing - Demo Website by OyisaTech</footer>
+<script>
+function sendWhatsApp(){
+let n=document.getElementById('name').value;
+let p=document.getElementById('phone').value;
+let s=document.getElementById('service').value;
+let m=document.getElementById('msg').value;
+let text="Hi O'Kelly's, I'm "+n+" ("+p+"). I need: "+s+". Details: "+m;
+window.open("https://wa.me/27723151510?text="+encodeURIComponent(text),"_blank");
+}
+</script>
+</body>
+  </html>
